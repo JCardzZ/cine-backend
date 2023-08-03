@@ -1,0 +1,33 @@
+<div class="container mt-2">
+  <legend>Editar</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtNombre" class="form-label">Nombre</label>
+      <input
+        type="text" class="form-control" id="txtNombre" aria-describedby="" name="Nombre" [(ngModel)]="peliculas.nombre"/>
+    </div>
+    <div class="mb-3">
+      <label for="txtPoder" class="form-label">Poder</label>
+      <input type="text" class="form-control" id="txtPoder" aria-describedby="" name="Poder" [(ngModel)]="peliculas.poder"/>
+    </div>
+    <div class="mb-3">
+      <label for="txtProductora" class="form-label">Productora</label>
+      <input type="text" class="form-control" id="txtProductora" aria-describedby="" name="Productora" [(ngModel)]="peliculas.productora"/>
+    </div>
+
+    <div class="mb-3">
+      <label for="txtSinopsis" class="form-label">Sinopsis</label>
+      <textarea class="form-control" id="txtSinopsis" name="Sinopsis" [(ngModel)]="peliculas.sinopsis"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="txtImageUrl" class="form-label">ImageUrl</label>
+      <input type="text" class="form-control" id="txtImageUrl" aria-describedby="" name="ImageUrl" [(ngModel)]="peliculas.imageUrl"/>
+    </div>
+    <div class="mb-3">
+      <label for="txtObservacion" class="form-label">observacion</label>
+      <input type="text" class="form-control" id="txtObservacion" aria-describedby="" name="Observacion" [(ngModel)]="peliculas.observacion"/>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="update()">Guardar cambios</button>
+  </form>
+</div>
